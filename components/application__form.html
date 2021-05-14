@@ -1,0 +1,32 @@
+<section class="application__block">
+  <h1>Заявка</h1>
+  <form class = "form" action=“https://formspree.io/f/xvodojew” method=“POST”>
+    <label class="form__label">
+      <p class="form__text">E-mail</p>
+      <input class = "form__input" type="email" min=“4” required placeholder="Введите ваш E-mail">
+      <img class="input__icon" src="src/img/svg/done.svg">
+    </label>
+    <label class="form__label">
+      <p class="form__text">Номер телефона</p>
+      <input class = "form__input" type="tel" min=“4” required placeholder="Введите номер телефона">
+      <img class="input__icon" src="src/img/svg/done.svg">
+    </label>
+    <label class="form__label">
+     <p class="form__text">Какая у Вас проблема?</p>
+      <select class="form__select" name="select_problem">
+        <option value="heating">Отопление</option>
+        <option value="sewerage">Канализация</option>
+        <option value="pipes">Водопровод</option>
+        <option value="other">Другое</option>
+      </select>
+      <img class="input__icon input__icon--select" src="src/img/svg/select.svg">
+    </label>
+    <div class = "application__request">
+      <img src="src/img/svg/Toggle 1.svg">
+      <span class = "request__text">Нажмите сюда, если хотите получать от нас рекламную рассылку</span>
+    </div>
+    <div class="form__button">
+      <button type=“submit” class="btn btn--request btn--block">ОТПРАВИТЬ</button>
+    </div>
+   </form>
+</section>
